@@ -534,6 +534,8 @@ main {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
+
+  padding: 8px 8px 16px;
 }
 
 .footer-input {
@@ -544,9 +546,14 @@ main {
   height: 40px;
   background-color: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .footer-input:hover {
+  border: 1px solid #31d0aa;
+}
+
+.footer-input:focus {
   border: 1px solid #31d0aa;
 }
 
@@ -590,6 +597,7 @@ main {
 
 .footer-form-container {
   padding-left: 80px;
+  margin-left: auto;
 }
 
 .footer-form-btn-icon {
@@ -614,11 +622,11 @@ main {
   pointer-events: none;
 }
 
-/* .is-open {
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-} */
+}
 
 .modal {
   position: absolute;
