@@ -622,9 +622,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  /* opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  pointer-events: none; */
 }
 
 .is-open {
@@ -680,6 +680,10 @@ main {
   fill: #ffffff;
 }
 
+.modal-close:focus .modal-cross-icon {
+  fill: #ffffff;
+}
+
 .modal-title {
   font-weight: 500;
   font-size: 16px;
@@ -719,6 +723,12 @@ main {
   outline: transparent;
   resize: none;
   padding: 8px 16px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .comment-modal:focus {
@@ -824,6 +834,14 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.modal-check-icon::after {
+  opacity: 0;
+}
+
+.modal-check-icon:checked {
+  opacity: 1;
 }
 
 .modal-check:checked + .modal-check-label .modal-fake-check {
