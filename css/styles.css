@@ -530,7 +530,6 @@ main {
 
 .footer-input::placeholder {
   color: #fff;
-  padding: 8px 8px 16px;
 }
 
 .footer-input {
@@ -548,6 +547,8 @@ main {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #fff;
+
+  padding: 8px 8px 16px;
 }
 
 .footer-input:hover {
@@ -622,9 +623,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* opacity: 0;
+  opacity: 0;
   visibility: hidden;
-  pointer-events: none; */
+  pointer-events: none;
 }
 
 .is-open {
@@ -807,7 +808,7 @@ main {
 .modal-check-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.33;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
